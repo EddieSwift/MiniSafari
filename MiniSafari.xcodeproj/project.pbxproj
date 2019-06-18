@@ -8,24 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		2CFE15EC22B8D9A800B4B359 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE15EB22B8D9A800B4B359 /* AppDelegate.m */; };
-		2CFE15EF22B8D9A800B4B359 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE15EE22B8D9A800B4B359 /* ViewController.m */; };
 		2CFE15F222B8D9A800B4B359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE15F022B8D9A800B4B359 /* Main.storyboard */; };
 		2CFE15F422B8D9AA00B4B359 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE15F322B8D9AA00B4B359 /* Assets.xcassets */; };
-		2CFE15F722B8D9AA00B4B359 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE15F522B8D9AA00B4B359 /* LaunchScreen.storyboard */; };
 		2CFE15FA22B8D9AA00B4B359 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE15F922B8D9AA00B4B359 /* main.m */; };
+		2CFE160222B8D9CF00B4B359 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CFE160122B8D9CF00B4B359 /* WebKit.framework */; };
+		2CFE160422B8D9ED00B4B359 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CFE160322B8D9ED00B4B359 /* Launch Screen.storyboard */; };
+		2CFE160722B8DE5B00B4B359 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CFE160622B8DE5B00B4B359 /* WebViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2CFE15E722B8D9A800B4B359 /* MiniSafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniSafari.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CFE15EA22B8D9A800B4B359 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2CFE15EB22B8D9A800B4B359 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2CFE15ED22B8D9A800B4B359 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2CFE15EE22B8D9A800B4B359 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2CFE15F122B8D9A800B4B359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2CFE15F322B8D9AA00B4B359 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2CFE15F622B8D9AA00B4B359 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CFE15F822B8D9AA00B4B359 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2CFE15F922B8D9AA00B4B359 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2CFE160122B8D9CF00B4B359 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		2CFE160322B8D9ED00B4B359 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2CFE160522B8DE5B00B4B359 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		2CFE160622B8DE5B00B4B359 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CFE160222B8D9CF00B4B359 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +47,7 @@
 			children = (
 				2CFE15E922B8D9A800B4B359 /* MiniSafari */,
 				2CFE15E822B8D9A800B4B359 /* Products */,
+				2CFE160022B8D9CF00B4B359 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,15 +64,23 @@
 			children = (
 				2CFE15EA22B8D9A800B4B359 /* AppDelegate.h */,
 				2CFE15EB22B8D9A800B4B359 /* AppDelegate.m */,
-				2CFE15ED22B8D9A800B4B359 /* ViewController.h */,
-				2CFE15EE22B8D9A800B4B359 /* ViewController.m */,
+				2CFE160522B8DE5B00B4B359 /* WebViewController.h */,
+				2CFE160622B8DE5B00B4B359 /* WebViewController.m */,
 				2CFE15F022B8D9A800B4B359 /* Main.storyboard */,
 				2CFE15F322B8D9AA00B4B359 /* Assets.xcassets */,
-				2CFE15F522B8D9AA00B4B359 /* LaunchScreen.storyboard */,
 				2CFE15F822B8D9AA00B4B359 /* Info.plist */,
 				2CFE15F922B8D9AA00B4B359 /* main.m */,
+				2CFE160322B8D9ED00B4B359 /* Launch Screen.storyboard */,
 			);
 			path = MiniSafari;
+			sourceTree = "<group>";
+		};
+		2CFE160022B8D9CF00B4B359 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CFE160122B8D9CF00B4B359 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,7 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CFE15F722B8D9AA00B4B359 /* LaunchScreen.storyboard in Resources */,
+				2CFE160422B8D9ED00B4B359 /* Launch Screen.storyboard in Resources */,
 				2CFE15F422B8D9AA00B4B359 /* Assets.xcassets in Resources */,
 				2CFE15F222B8D9A800B4B359 /* Main.storyboard in Resources */,
 			);
@@ -141,8 +153,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CFE15EF22B8D9A800B4B359 /* ViewController.m in Sources */,
 				2CFE15FA22B8D9AA00B4B359 /* main.m in Sources */,
+				2CFE160722B8DE5B00B4B359 /* WebViewController.m in Sources */,
 				2CFE15EC22B8D9A800B4B359 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -156,14 +168,6 @@
 				2CFE15F122B8D9A800B4B359 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		2CFE15F522B8D9AA00B4B359 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2CFE15F622B8D9AA00B4B359 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
