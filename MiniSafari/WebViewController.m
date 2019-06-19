@@ -15,6 +15,7 @@
 @implementation WebViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
     
     self.webView.translatesAutoresizingMaskIntoConstraints = false;
@@ -51,13 +52,11 @@
 - (IBAction)backButtonAction:(UIBarButtonItem *)sender {
     
     [self.indicator startAnimating];
-
+    
     if ([self.webView canGoBack]) {
         [self.webView stopLoading];
         [self.webView goBack];
     }
-    
-    [self.webView reload];
 }
 
 - (IBAction)forwardButtonAction:(UIBarButtonItem *)sender {
@@ -68,8 +67,6 @@
         [self.webView stopLoading];
         [self.webView goForward];
     }
-    
-    [self.webView reload];
 }
 
 - (IBAction)refreshButtonAction:(UIBarButtonItem *)sender {
@@ -109,17 +106,6 @@
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     
-//    if ([textField isEqual:self.usernameSignTextField]) {
-//
-//        [self.passwordSignTextField becomeFirstResponder];
-//
-//    } else {
-//
-//        [textField resignFirstResponder];
-//
-//        // To click button for registration when you clicking button "Done" on the keyboard
-//        [self signIn:self.loginButton];
-//    }
     [textField resignFirstResponder];
     
     [self loadWebSite];
